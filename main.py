@@ -10,3 +10,8 @@ def home():
 @app.get("/saluta/{nome}")
 def saluta(nome: str):
     return {"saluto": f"Ciao, {nome}"}
+
+@app.get("/stato")
+def stato():
+    return {"ok": True}
+
