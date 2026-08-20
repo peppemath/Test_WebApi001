@@ -2,7 +2,6 @@ from fastapi import FastAPI
 
 app = FastAPI(title="Test Web API")
 
-
 @app.get("/")
 def home():
     return {"message": "Ciao, l'API funziona"}
